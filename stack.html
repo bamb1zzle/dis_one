@@ -1,0 +1,32 @@
+<html>
+<body>
+    <script>
+
+        let arr = []
+
+        function buildarray(n){
+        for (let i = 0; i < n; i++){
+            arr.push(i)
+        }
+        }
+
+        function recurssive(n){
+            if (n==0) {
+                console.log("we are finished.")
+                }
+            else {
+                console.log(n)
+                return (n+recurssive(n-1))
+            }
+        }
+
+        recurssive(5);
+        n = 5
+        buildarray(7);
+        console.log(arr);
+        console.log(arr.length);
+
+
+    </script>
+</body>
+</html>
